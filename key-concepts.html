@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Browser Research</title>
+
+    <!-- Link Inter font from google server -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+     <!-- Liniking external stylesheet -->
+
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <!-- Navigation Menu bar start -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browser-features-and-security.html">Browser Features and Security</a></li>
+                <li><a href="browser-history.html">Browser History</a></li>
+                <li><a href="key-concepts.html" class="active">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about-me.html" >About Me</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation Menu bar end -->
+
+    </header>
+    
+    <!-- Page Main Content start -->
+        <div class="container">
+        <main class="main-content">
+        <h2>Major Browsers:</h2>
+        <div class="img-wrapper">
+        <img src="images/major-browsers.png" class="center-img" alt="major browser">
+        <p>Image Source: Internet</p>
+        </div>
+        <p>Eventually, larger companies got involved and saw browsers as more than just software but as a
+        gateway. Netscape was once a big player in browsers, but once Microsoft bundled Internet
+        Explorer with Windows, it changed the browser game. The impact this had on the web ranged
+        from how quickly browsers would implement features to how websites were made. It also had an
+        impact on browser compatibility because some sites were only made to work with Internet
+        Explorer. The browser wars taught us that browsers are not just software applications; they are a
+        strategic resource. This still impacts how we discuss default browsers and market dominance
+        today. Data also shows that innovation stagnates when competition is low between browsers. [6]
+        That is another reason many people advocate for multiple browser options.</p>
+        <p>What happened after Internet Explorer began gaining market share? Open-source communities
+        and companies decided to make a browser too. Mozilla and Firefox are widely known because
+        they took a different route than other browsers. Mozilla valued transparency and allowed users to
+        customize Firefox however they wanted. Firefox brought major changes and features that are
+        considered modern today, such as better tab functionality and extension support. It also pushed
+        other browsers to pay more attention to privacy and user control. Firefox remains one of the
+        biggest competitors to major browsers, showing that strong competition can come from
+        nonprofits and communities. [7]</p>
+        <p>Google decided to create Chrome, another browser that would compete for market dominance.
+        Chrome focused heavily on speed and simplicity but also created a revolutionary process model
+        that enhanced browser stability. [8] Chrome also introduced the world to frequent browser
+        updates. These updates gave users more frequent features along with security updates. Chrome’s
+        display and speed influenced other browsers to adopt similar browser engines or similar features.
+        This includes tabbed across multiple processes and better isolation with sandboxing. Chrome
+        also became very popular because it worked well with Google services and had the largest
+        extension library at the time.</p>
+        <p>Today there are many browsers that users use daily. However, there are several large browsers
+        that most users choose from. When looking for a browser, users usually choose from Chrome,
+        Microsoft Edge, Firefox, Safari, and Opera. [9]</p>
+        
+        <table>
+    <thead>
+    <tr>
+      <th>Browser Name</th>
+      <th>Developer</th>
+      <th>Initial Launch Date</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WorldWideWeb (Nexus)</td>
+      <td>Tim Berners-Lee (CERN)</td>
+      <td>December 25, 1990</td>
+      <td>Historical</td>
+    </tr>
+    <tr>
+      <td>Mosaic</td>
+      <td>NCSA</td>
+      <td>April 22, 1993</td>
+      <td>Historical</td>
+    </tr>
+    <tr>
+      <td>Netscape Navigator</td>
+      <td>Netscape Communications</td>
+      <td>October 13, 1994</td>
+      <td>Historical</td>
+    </tr>
+    <tr>
+      <td>Internet Explorer</td>
+      <td>Microsoft</td>
+      <td>August 16, 1995</td>
+      <td>Retired</td>
+    </tr>
+    <tr>
+      <td>Opera</td>
+      <td>Opera Software</td>
+      <td>April 10, 1995</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td>Safari</td>
+      <td>Apple Inc.</td>
+      <td>January 7, 2003</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td>Mozilla Firefox</td>
+      <td>Mozilla Foundation</td>
+      <td>November 9, 2004</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td>Google Chrome</td>
+      <td>Google</td>
+      <td>September 2, 2008</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td>Microsoft Edge</td>
+      <td>Microsoft</td>
+      <td>July 29, 2015</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td>Brave</td>
+      <td>Brave Software</td>
+      <td>January 20, 2016</td>
+      <td>Active</td>
+    </tr>
+  </tbody>
+    </table>
+        <h2>How Browsers Work:</h2>
+        <p>When people think of browsers, they think of using browsers to look at websites, but there is a
+        lot going on behind the scenes. Browsers read languages like HTML, CSS, and JavaScript to
+        display content on webpages. They manage network connections and memory so websites open
+        in a reasonable amount of time and maintain what is called a permissions ledger that gives sites
+        permission to use users’ camera, location, and other elements.</p>
+        <p>In simplified terms, a browser retrieves data from the web, constructs web pages from that data,
+        and provides protection through encrypted connections. Browsers also rely on shared web
+        standards.</p>
+        <p>To understand why each browser may act differently it is important to understand how browsers
+        work behind the scenes. When a web page is loaded, browsers construct the DOM from the
+        HTML, style it with CSS, lay out the page, and paint to screen. JavaScript can alter the DOM
+        later, causing the page to re-layout and repaint, which can cause slow-rendering pages with too
+        much scripting. Knowing this also explains how browsers optimize performance, memory
+        consumption, and responsiveness. [10]</p>
+
+        <h2>Lightweight Browsers and Future:</h2>
+        <p>There is no single best browser because users have different needs. Some want privacy, some
+        want extra features, and others want something simple. Browser articles help users find the best
+        option for them. Some experts recommend using more than one browser; one browser for work
+        and another for personal browsing. [11] As users begin to understand their needs, it will become
+        clearer why there is no one correct answer when picking a browser.</p>
+        <p>More recently, there has been a push for browsers to be “low resource” or lightweight. What
+        constitutes a lightweight browser? Lightweight browsers are typically faster, use less memory,
+        and can open quickly. These browsers work well on older laptops and help save storage space
+        and battery life. Lightweight browsers can improve performance when many background
+        processes are running. Lightweight browsers will typically cut down on clutter to improve the
+        browsing experience whether it be through trimming background-processes or simplifying
+        design elements. As more devices are used over time, lighter browsers may become more
+        popular. [12]</p>
+        <p>In the future, browsers will continue to improve as the websites become more advanced.
+        Websites feel like applications today, which require browsers to support new features without
+        compromising speed and security. Privacy and security will continue to be big topics as tracking
+        online continues to increase and cyber threats become more dangerous.
+        Despite new features and changes to browsers, the concept of browsers will likely stay the same:
+        they will act as a software intermediary to safely experience the web.</p>
+        
+        <h2>Browser Functionality:</h2>
+        <p>Browser functionality is how a browser behaves or functions in order to 
+          display web pages. A browser reads HTML, CSS, and JavaScript in order to render them onscreen. 
+          Browsers also enable users to navigate web pages and click hyperlinks with ease.</p>
+        
+        <h2>Web Content:</h2>
+        <p>Web content is made up of any information that are found on web pages. It can include text, images, 
+          videos, hyperlinks and more. Web browsers help users to access this content after downloading it from 
+          the web server.</p>
+
+        </main>  
+
+           <aside id="sidebar">
+            <h2>Examples of Browsers</h2>
+            <p>The Internet Explorer</p>
+            <p>The Google Chrome</p>
+            <p>The Safari</p>
+            <p>The Opera Mini</p>
+        </aside>
+        </div>
+    
+    <footer>        
+        <p><a href="https://ksuweb.github.io/IT3203/">This is a class project.</a></p>
+    </footer>
+
+    
+</body>
+</html>

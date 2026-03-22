@@ -1,0 +1,197 @@
+:root {
+    /* Professional Midnight & Slate Palette */
+    --color-white: #ffffff;
+    --color-near-white: #f8fafc; /* Main background */
+    --color-light-slate: #e2e8f0; /* Card background/subtle section divider */
+    --color-soft-navy: #1e293b; /* Primary accent / Navigation */
+    --color-dark-text: #0f172a; /* Headings and main text */
+    --color-shadow: rgba(0, 0, 0, 0.06); /* Subtle shadow for depth */
+    --color-accent: #38bdf8; /* Professional blue for hovers */
+    --max-width: 1000px;
+}
+
+/* --- Global Reset and Body Styling --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-near-white);
+    color: var(--color-dark-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Header and Navigation --- */
+header {
+    background-color: #0f172a;
+    padding: 1.2rem 0;
+    box-shadow: 0 4px 6px var(--color-shadow);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    font-size: 11.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Active/Hover Underline Effect */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: var(--color-white);
+}
+
+/* --- Main Content Container (The Card) --- */
+.container {
+display: flex;
+min-height: 100vh;
+}
+
+.main-content {
+flex: 0 0 80%;
+background-color: var(--color-white);
+padding: 20px 40px;
+}
+
+#sidebar {
+flex: 0 0 20%;
+background-color: #f1f5f9;
+padding: 20px;
+}
+
+/* --- Typography and Layout --- */
+h1 {
+    color: var(--color-soft-navy);
+    font-size: 2.2rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: var(--color-dark-text);
+    border-bottom: 2px solid var(--color-light-slate);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+        font-size: 1.2rem;
+        color: var(--color-soft-navy);
+        margin-top: 0.5rem;
+}
+
+h1, h2, h3
+{
+    color: var(--color-soft-navy);
+}
+p, ul, li {
+    font-weight: 400;
+    color: #475569; /* Balanced slate for readability */
+    padding: 10px 0px;
+}
+
+table
+{
+    width:100%;
+}
+
+table, th, td 
+{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+
+}
+.img-wrapper {
+    text-align: center; /* This centers the image inside */
+    padding: 20px 0;
+}
+
+.center-img {
+    width: 80%; 
+    height: auto;
+}
+
+.reference-list {
+    list-style: none; /* Removes bullets for a cleaner look */
+    padding: 0;
+}
+
+.reference-list li {
+    margin-bottom: 6px;
+    font-size: 14px; /* Slightly smaller for references */
+    color: #64748b; /* Slate grey for the numbers */
+}
+
+.reference-list a {
+    color: var(--color-accent); /* The light blue we defined */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.reference-list a:hover {
+    color: var(--color-soft-navy);
+    text-decoration: underline;
+}
+
+/* --- Footer Styling --- */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #0f172a;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+footer p, footer p a:link,footer p a:visited {
+    color: #94a3b8;
+}
+footer p a:hover
+{
+    color: var(--color-accent);
+}
