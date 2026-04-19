@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Browser Research - Quiz</title>
+    <!-- Link Inter font from google server -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Linking external stylesheet -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browser-features-and-security.html">Browser Features and Security</a></li>
+                <li><a href="browser-history.html">Browser History</a></li>
+                <li><a href="key-concepts.html">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main class="main-content">
+            <h1>Web Browser Quiz</h1>
+            <p>Test your knowledge of web browser fundamentals.</p>
+            
+            <div id="quiz-form" class="quiz-container">
+                
+                <!-- 1. Fill in the blank -->
+                <div class="question-block">
+                    <p class="question-text">1. A web browser sends requests over the internet to a __________ to load web pages.</p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">(Hint: It hosts website content)</p>
+                    <input type="text" id="q1-blank" class="text-input" placeholder="Enter answer here...">
+                </div>
+
+                <!-- 2. Multiple Choice -->
+                <div class="question-block">
+                    <p class="question-text">2. Which of the following is a web browser?</p>
+                    <label class="option-item"><input type="radio" name="q2" value="A"> A) Windows</label>
+                    <label class="option-item"><input type="radio" name="q2" value="B"> B) Chrome</label>
+                    <label class="option-item"><input type="radio" name="q2" value="C"> C) Linux</label>
+                    <label class="option-item"><input type="radio" name="q2" value="D"> D) Excel</label>
+                </div>
+
+                <!-- 3. Multiple Choice -->
+                <div class="question-block">
+                    <p class="question-text">3. What does a web browser do?</p>
+                    <label class="option-item"><input type="radio" name="q3" value="A"> A) Creates games</label>
+                    <label class="option-item"><input type="radio" name="q3" value="B"> B) Displays web pages</label>
+                    <label class="option-item"><input type="radio" name="q3" value="C"> C) Stores files</label>
+                    <label class="option-item"><input type="radio" name="q3" value="D"> D) Edits videos</label>
+                </div>
+
+                <!-- 4. Multiple Choice -->
+                <div class="question-block">
+                    <p class="question-text">4. Which component runs JavaScript?</p>
+                    <label class="option-item"><input type="radio" name="q4" value="A"> A) Networking</label>
+                    <label class="option-item"><input type="radio" name="q4" value="B"> B) JavaScript Engine</label>
+                    <label class="option-item"><input type="radio" name="q4" value="C"> C) Data Storage</label>
+                    <label class="option-item"><input type="radio" name="q4" value="D"> D) User Interface</label>
+                </div>
+
+                <!-- 5. Multi-Selection -->
+                <div class="question-block">
+                    <p class="question-text">5. Which are parts of a web browser? (Select all that apply)</p>
+                    <label class="option-item"><input type="checkbox" name="q5" value="A"> A) User Interface</label>
+                    <label class="option-item"><input type="checkbox" name="q5" value="B"> B) Rendering Engine</label>
+                    <label class="option-item"><input type="checkbox" name="q5" value="C"> C) JavaScript Engine</label>
+                    <label class="option-item"><input type="checkbox" name="q5" value="D"> D) Operating System</label>
+                </div>
+
+                <div class="quiz-controls" style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <button type="button" class="quiz-btn" onclick="checkQuiz()">Submit Answers</button>
+                    <button type="button" class="quiz-btn" style="background: var(--text-muted);" onclick="resetQuiz()">Reset Quiz</button>
+                </div>
+            </div>
+
+            <div id="quiz-result"></div>
+        </main>
+
+        <aside id="sidebar">
+            <div class="sidebar-card">
+                <h2>Quiz Instructions</h2>
+                <ul style="font-size: 0.85rem; padding-left: 1.2rem; list-style-type: disc;">
+                    <li>Ensure spelling is correct for fill-in-the-blank questions.</li>
+                    <li>For multi-select questions, all correct boxes must be checked.</li>
+                </ul>
+            </div>
+            
+        </aside>
+    </div>
+    
+    <footer>        
+        <p><a href="https://ksuweb.github.io/IT3203/">This is a class project.</a></p>
+    </footer>
+
+    <!-- Quiz Result Overlay -->
+    <div id="result-overlay" class="result-overlay">
+        <div class="result-box">
+            <div class="result-header">
+                <div id="result-status" class="result-status"></div>
+                <div id="score-display" class="score-display"></div>
+                <div class="pass-note">A minimum score of 3 is required to pass.</div>
+            </div>
+            
+            <div id="breakdown-container" class="breakdown-container">
+                <!-- Detailed results will be injected here -->
+            </div>
+
+            <button type="button" class="retake-btn" onclick="resetQuiz()">Retake / Reset Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
