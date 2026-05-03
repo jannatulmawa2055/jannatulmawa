@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Browser Research</title>
+
+    <!-- Link Inter font from google server -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Liniking external stylesheet -->
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Navigation Menu bar start -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle"><label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label><nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browser-features-and-security.html">Browser Features and Security</a></li>
+                <li><a href="browser-history.html">Browser History</a></li>
+                <li><a href="key-concepts.html" class="active">Key Concepts</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation Menu bar end -->
+
+    </header>
+
+    <!-- Page Main Content start -->
+    <div class="container">
+        <main class="main-content">
+            <h2>Major Browsers:</h2>
+            <div class="img-wrapper">
+                <img src="images/major-browsers.png" class="center-img" alt="Major modern browsers logo collection">
+                <p>Image Source: Internet</p>
+            </div>
+
+            <p>Eventually, larger companies got involved and saw browsers as more than just software but as a gateway.
+                Netscape was once a big player in browsers, but once Microsoft bundled Internet Explorer with Windows,
+                it changed the browser game. The impact this had on the web ranged from how quickly browsers would
+                implement features to how websites were made. It also had an impact on browser compatibility because
+                some sites were only made to work with Internet Explorer. The browser wars taught us that browsers are
+                not just software applications; they are a strategic resource. This still impacts how we discuss default
+                browsers and market dominance today. Data also shows that innovation stagnates when competition is low
+                between browsers. [6] That is another reason many people advocate for multiple browser options.</p>
+
+            <p>What happened after Internet Explorer began gaining market share? Open-source communities and companies
+                decided to make a browser too. Mozilla and Firefox are widely known because they took a different route
+                than other browsers. Mozilla valued transparency and allowed users to customize Firefox however they
+                wanted. Firefox brought major changes and features that are considered modern today, such as better tab
+                functionality and extension support. It also pushed other browsers to pay more attention to privacy and
+                user control. Firefox remains one of the biggest competitors to major browsers, showing that strong
+                competition can come from nonprofits and communities. [7]</p>
+
+            <p>Google decided to create Chrome, another browser that would compete for market dominance. Chrome focused
+                heavily on speed and simplicity but also created a revolutionary process model that enhanced browser
+                stability. [8] Chrome also introduced the world to frequent browser updates. These updates gave users
+                more frequent features along with security updates. Chrome's display and speed influenced other browsers
+                to adopt similar browser engines or similar features. This includes tabbed across multiple processes and
+                better isolation with sandboxing. Chrome also became very popular because it worked well with Google
+                services and had the largest extension library at the time.</p>
+
+            <p>Today there are many browsers that users use daily. However, there are several large browsers that most
+                users choose from. When looking for a browser, users usually choose from Chrome, Microsoft Edge,
+                Firefox, Safari, and Opera. [9]</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Browser Name</th>
+                            <th>Developer</th>
+                            <th>Initial Launch Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>WorldWideWeb (Nexus)</td>
+                            <td>Tim Berners-Lee (CERN)</td>
+                            <td>December 25, 1990</td>
+                            <td>Historical</td>
+                        </tr>
+                        <tr>
+                            <td>Mosaic</td>
+                            <td>NCSA</td>
+                            <td>April 22, 1993</td>
+                            <td>Historical</td>
+                        </tr>
+                        <tr>
+                            <td>Netscape Navigator</td>
+                            <td>Netscape Communications</td>
+                            <td>October 13, 1994</td>
+                            <td>Historical</td>
+                        </tr>
+                        <tr>
+                            <td>Internet Explorer</td>
+                            <td>Microsoft</td>
+                            <td>August 16, 1995</td>
+                            <td>Retired</td>
+                        </tr>
+                        <tr>
+                            <td>Opera</td>
+                            <td>Opera Software</td>
+                            <td>April 10, 1995</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Safari</td>
+                            <td>Apple Inc.</td>
+                            <td>January 7, 2003</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Mozilla Firefox</td>
+                            <td>Mozilla Foundation</td>
+                            <td>November 9, 2004</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Google Chrome</td>
+                            <td>Google</td>
+                            <td>September 2, 2008</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Edge</td>
+                            <td>Microsoft</td>
+                            <td>July 29, 2015</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Brave</td>
+                            <td>Brave Software</td>
+                            <td>January 20, 2016</td>
+                            <td>Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>How browsers Work:</h2>
+            <p>When people think of browsers, they think of using browsers to look at websites, but there is a lot going
+                on behind the scenes. Browsers read languages like HTML, CSS, and JavaScript to display content on
+                webpages. They manage network connections and memory so websites open in a reasonable amount of time and
+                maintain what is called a permissions ledger that gives sites permission to use users' camera, location,
+                and other elements.</p>
+
+            <p>In simplified terms, a browser retrieves data from the web, constructs web pages from that data, and
+                provides protection through encrypted connections. Browsers also rely on shared web standards.</p>
+
+            <p>Understanding how browsers operate behind the scenes can help explain why each browser might behave differently. 
+			    Browsers create the DOM from HTML when a webpage is loaded, style it, do the layout, and paint it out to the 
+				screen. JavaScript can modify the DOM at any time, which forces the page to update the layout and redraw the page. 
+				Too much of this can cause pages to be rendered slowly. Knowing this also explains how browsers optimize performance, 
+				memory consumption, and responsiveness. [10]</p>
+
+            <h2>Lightweight Browsers and Future:</h2>
+            <p>There is no single best browser because users have different needs. Some want privacy, some
+                want extra features, and others want something simple. Browser articles help users find the best
+                option for them. Some experts recommend using more than one browser; one browser for work
+                and another for personal browsing. [11] As users begin to understand their needs, it will become
+                clearer why there is no one correct answer when picking a browser.</p>
+            <p>More recently, there has been a push for browsers to be “low resource” or lightweight. What
+                constitutes a lightweight browser? Lightweight browsers are typically faster, use less memory,
+                and can open quickly. These browsers work well on older laptops and help save storage space
+                and battery life. Lightweight browsers can improve performance when many background
+                processes are running. Lightweight browsers will typically cut down on clutter to improve the
+                browsing experience whether it be through trimming background-processes or simplifying
+                design elements. As more devices are used over time, lighter browsers may become more
+                popular. [12]</p>
+            <p>As time goes on browsers will only get better to keep up with advanced websites. Sites these days 
+			    can operate like applications so browsers have to keep up with allowing sites to use features but 
+				also being quick and secure. Privacy and security will always be prominent because as we increase 
+				the ability to track online, we open ourselves up to more dangerous cyber threats. While browsers 
+				may gain features and change over time the basic idea of browsers will remain the same; they will 
+				be a software intermediary that lets you safely experience the internet.</p>
+
+            <h2>Mobile vs Desktop Browsers</h2>
+            <p>Mobile browsers and desktop browsers have the same functionality, but they are used differently. Desktop
+                browsers are browsers typically used on laptops and desktops with bigger screens. Desktop browsers are
+                able to multitask and allow user to use features with their full capabilities. Most users like to browse
+                the internet with their desktop browser when working, researching, or using web applications because it
+                is smoother and allows users to have more control over what they are doing</p>
+
+            <p>Mobile browsers are designed to be convenient and fast. Mobile browsers are used on phones and tablets.
+                Mobile browsers load pages quickly and are optimized for easy navigation with touch screens. 59.99% of
+                all web traffic throughout the world is generated by mobile devices while 37.78% of traffic is generated
+                by desktop computers [13]. Most people use mobile browsers to browse the internet when doing tasks like
+                going on social media, looking things up, and shopping because it is quick and portable. </p>
+
+            <h3 style="font-size: 1.1rem; margin-top: 1rem;">Mobile vs Desktop Browser Usage Comparison [13]</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Mobile Browsers</th>
+                            <th>Desktop Browsers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Global Traffic Share</td>
+                            <td>~59.99%</td>
+                            <td>~37.78%</td>
+                        </tr>
+                        <tr>
+                            <td>Device Type</td>
+                            <td>Smartphones, Tablets</td>
+                            <td>Laptops, PCs</td>
+                        </tr>
+                        <tr>
+                            <td>Usage Style</td>
+                            <td>Quick access, on-the-go</td>
+                            <td>Work, detailed tasks</td>
+                        </tr>
+                        <tr>
+                            <td>Screen Size</td>
+                            <td>Small</td>
+                            <td>Large</td>
+                        </tr>
+                        <tr>
+                            <td>Performance</td>
+                            <td>Optimized for battery</td>
+                            <td>Higher processing power</td>
+                        </tr>
+                        <tr>
+                            <td>Navigation</td>
+                            <td>Touch-based</td>
+                            <td>Mouse & keyboard</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Browser Components:</h2>
+
+            <p>The browser has many components that work simultaneously in order to display requested content to the
+                user. Components enable browsers to communicate with web servers and request web content which is then
+                displayed on the screen. Web browsers are built with components such as the user interface, browser
+                engine, rendering engine, networking, JavaScript engine, and data storage. The browser's user interface
+                includes the address bar, buttons, tabs and so on. The browser engine allows the browser to communicate
+                with the rendering engine. The rendering engine reads HTML and CSS code and then displays requested
+                content from the server on the screen. Networking allows browsers to request resources from the web
+                server. The JavaScript engine helps to read JavaScript code which is used to create web page behaviors.
+                Data storage allows browsers to save data such as cookies and cache in order to speed up browser
+                performance and loading time [14].</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Components</th>
+                            <th>Function</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>User Interface</td>
+                            <td>Helps users interact with the browser</td>
+                            <td>Address bar, buttons</td>
+                        </tr>
+                        <tr>
+                            <td>Browser Engine</td>
+                            <td>Connects different parts of the browser</td>
+                            <td>Controls page loading</td>
+                        </tr>
+                        <tr>
+                            <td>Rendering Engine</td>
+                            <td>Displays website content</td>
+                            <td>Shows webpage layout</td>
+                        </tr>
+                        <tr>
+                            <td>Networking</td>
+                            <td>Networking</td>
+                            <td>Loads web pages</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript Engine</td>
+                            <td>Runs scripts</td>
+                            <td>Forms, animations</td>
+                        </tr>
+                        <tr>
+                            <td>Data Storage</td>
+                            <td>Stores data</td>
+                            <td>Cookies, cache</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <aside id="sidebar">
+            <div class="sidebar-card">
+            <h2>Examples of Browsers</h2>
+            <p>The Internet Explorer</p>
+            <p>The Google Chrome</p>
+            <p>The Safari</p>
+            <p>The Opera Mini</p>
+            </div>            
+        </aside>
+    </div>
+
+    <footer>
+        <p><a href="https://ksuweb.github.io/IT3203/">This is a class project.</a></p>
+    </footer>
+
+
+</body>
+
+</html>
